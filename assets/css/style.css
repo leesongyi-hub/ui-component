@@ -1,0 +1,51 @@
+[class*=bt-] {
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bt-primary {
+  color: #ffffff;
+  background-color: #3182F6;
+  border: #3182F6;
+}
+
+.bt-size-xlg {
+  padding: 0 20px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.bt-size-lg {
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.bt-size-md {
+  padding: 0 16px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bt-size-sm {
+  padding: 0 12px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.bt-size-xsm {
+  padding: 0 12px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */

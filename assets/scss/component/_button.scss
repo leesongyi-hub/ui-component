@@ -1,0 +1,43 @@
+
+[class*="bt-"]{border:0;border-radius:$bt-radius-defalut;cursor:pointer;}
+
+.bt-primary{
+  color:$bt-primary-text-color;
+  background-color:$bt-primary-bg-color;
+  border:$bt-primary-border-color;
+}
+.bt-size-xlg{ 
+  padding:0 20px; 
+  height:$bt-size-xlg;
+  line-height:$bt-size-xlg;
+  font-size:15px; 
+  font-weight:500;
+}
+.bt-size-lg{ 
+  padding:0 16px; 
+  height:$bt-size-lg;
+  line-height:$bt-size-lg;
+  font-size:15px;
+  font-weight:500;
+}
+.bt-size-md{ 
+  padding:0 16px; 
+  height:$bt-size-md;
+  line-height:$bt-size-md;
+  font-size:14px;
+  font-weight:500;
+}
+.bt-size-sm{ 
+  padding:0 12px; 
+  height:$bt-size-sm;
+  line-height:$bt-size-sm;
+  font-size:14px;
+  font-weight:500;
+}
+.bt-size-xsm{ 
+  padding:0 12px; 
+  height:$bt-size-xsm;
+  line-height:$bt-size-xsm;
+  font-size:14px;
+  font-weight:500;
+}
