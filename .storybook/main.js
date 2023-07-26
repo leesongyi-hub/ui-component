@@ -16,5 +16,8 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  features: {
+    iframe: true, // iframe 모드를 활성화합니다.
+  },
 };
 export default config;
