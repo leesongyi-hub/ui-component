@@ -1,5 +1,10 @@
 
-[class*="bt-"]{border:0;border-radius:$bt-radius-defalut;cursor:pointer;}
+[class*="bt-"]{
+  display:inline-flex;
+  border:0;
+  border-radius:$bt-radius-defalut;
+  cursor:pointer;
+}
 
 .bt-size-xlg{ 
   padding:0 20px; 

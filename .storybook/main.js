@@ -1,5 +1,6 @@
-/** @type { import('@storybook/html-webpack5').StorybookConfig } */
-const config = {
+const path = require('path');
+
+module.exports = {
   stories: [
     "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
@@ -20,4 +21,3 @@ const config = {
     iframe: true, // iframe 모드를 활성화합니다.
   },
 };
-export default config;

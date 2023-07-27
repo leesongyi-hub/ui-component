@@ -1,18 +1,14 @@
 import { createButton } from './Button';
 
-// More on how to set up stories at: https://storybook.js.org/docs/html/writing-stories/introduction
 export default {
   title: 'Example/Button',
   tags: ['autodocs'],
-  render: ({ label, ...args }) => {
-    // You can either use a function to create DOM elements or use a plain html string!
-    // return `<div>${label}</div>`;
-    return createButton({ label, ...args });
+  render: ({ label, icon, ...args }) => {
+    return createButton({ label, icon, ...args });
   },
   argTypes: {
-    //backgroundColor: { control: 'color' },
     label: { control: 'text' },
-    onClick: { action: 'onClick' },
+    icon: { control: 'text' }, // New icon property for the button's icon id
     type: {
       control: { type: 'select' },
       options: ['primary', 'outline', 'fill', 'outlineTonal', 'fillOutlineTonal', 'fillTonal', 'ghost'],
@@ -29,6 +25,7 @@ export const Primary = {
   args: {
     type: 'primary',
     label: '버튼명',
+    icon: 'ico_close',
   },  
 };
 export const Outline = {
