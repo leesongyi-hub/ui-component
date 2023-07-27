@@ -20,5 +20,5 @@ jobs:
         # Options required for Chromatic's GitHub Action
         with:
           #👇 Chromatic projectToken,
-          projectToken: ${{ secrets.chpt_32a8d6ac1e80437 }}
-          token: ${{ secrets.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 }}
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
