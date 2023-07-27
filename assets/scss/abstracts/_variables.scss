@@ -20,7 +20,7 @@ $base-color-gray-700:#333333;
 $base-color-gray-800:#272727;
 $base-color-gray-900:#1A1A1A;
 
-$base-color-primary-50:#F9FFFF;
+$base-color-primary-50:#E8F3FF;
 $base-color-primary-100:#C9E2FF;
 $base-color-primary-200:#90C2FF;
 $base-color-primary-300:#64A8FF;
@@ -33,6 +33,23 @@ $base-color-primary-900:#194AA6;
 
 $bt-radius-defalut:4px;
 
+$border-color-defalut:$base-color-gray-60;
+
+$color-primary: $base-color-primary-500;
+
+$txt-color-100:$base-color-gray-900;
+$txt-color-200:$base-color-gray-800;
+$txt-color-300:$base-color-gray-700;
+$txt-color-400:$base-color-gray-600;
+$txt-color-500:$base-color-gray-500;
+$txt-color-600:$base-color-gray-400;
+$txt-color-700:$base-color-gray-300;
+$txt-color-800:$base-color-gray-200;
+$txt-color-900:$base-color-gray-100;
+$txt-color-primary:$base-color-primary-600;
+
+$font-family:'Pretendard';
+
 //bt-size
 $bt-size-xlg:48px;
 $bt-size-lg:40px;
@@ -40,7 +57,37 @@ $bt-size-md:36px;
 $bt-size-sm:30px;
 $bt-size-xsm:26px;
 
-//bt-type-primary
-$bt-primary-bg-color:$base-color-primary-500;
-$bt-primary-border-color:$base-color-primary-500;
+//button-type-primary
+$bt-primary-bg-color:$color-primary;
+$bt-primary-border-color:$color-primary;
 $bt-primary-text-color:$base-color-white;
+
+//button-type-outline
+$bt-outline-bg-color:$base-color-white;
+$bt-outline-border-color:$border-color-defalut;
+$bt-outline-text-color:$txt-color-300;
+
+//button-type-fill
+$bt-fill-bg-color:$base-color-gray-30;
+$bt-fill-border-color:$base-color-gray-30;
+$bt-fill-text-color:$txt-color-300;
+
+//button-type-outlineTonal
+$bt-outlineTonal-bg-color:$base-color-white;
+$bt-outlineTonal-border-color:$color-primary;
+$bt-outlineTonal-text-color:$txt-color-primary;
+
+//button-type-fillOutlineTonal
+$bt-fillOutlineTonal-bg-color:$base-color-primary-50;
+$bt-fillOutlineTonal-border-color:$color-primary;
+$bt-fillOutlineTonal-text-color:$txt-color-primary;
+
+//button-type-fillTonal
+$bt-fillTonal-bg-color:$base-color-primary-50;
+$bt-fillTonal-border-color:$base-color-primary-50;
+$bt-fillTonal-text-color:$txt-color-primary;
+
+//button-type-ghost
+$bt-ghost-bg-color:transparent;
+$bt-ghost-border-color:transparent;
+$bt-ghost-text-color:$txt-color-primary;

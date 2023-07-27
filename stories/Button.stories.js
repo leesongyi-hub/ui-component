@@ -27,27 +27,63 @@ export default {
 // More on writing stories with args: https://storybook.js.org/docs/html/writing-stories/args
 export const Primary = {
   args: {
-    primary: true,
-    label: 'Button',
+    type: 'primary',
+    label: '버튼명',
+  },  
+};
+export const Outline = {
+  args: {
+    type: 'outline',
+    label: '버튼명',
+  },
+};
+export const Fill = {
+  args: {
+    type: 'fill',
+    label: '버튼명',
+  },
+};
+export const OutlineTonal = {
+  args: {
+    type: 'outlineTonal',
+    label: '버튼명',
+  },
+};
+export const FillOutlineTonal = {
+  args: {
+    type: 'fillOutlineTonal',
+    label: '버튼명',
+  },
+};
+export const fillTonal = {
+  args: {
+    type: 'fillTonal',
+    label: '버튼명',
+  },
+};
+export const ghost = {
+  args: {
+    type: 'ghost',
+    label: '버튼명',
   },
 };
 
-export const Secondary = {
-  args: {
-    label: 'Button',
-  },
-};
+// export const Secondary = {
+//   args: {
+//     label: '버튼명',
+//   },
+// };
 
-export const Large = {
-  args: {
-    size: 'large',
-    label: 'Button',
-  },
-};
+// export const Large = {
+//   args: {
+//     size: 'large',
+//     label: 'Button',
+//   },
+// };
 
-export const Small = {
-  args: {
-    size: 'small',
-    label: 'Button',
-  },
-};
+// export const Small = {
+//   args: {
+//     size: 'small',
+//     label: 'Button',
+//   },
+// };

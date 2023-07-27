@@ -1,11 +1,6 @@
 
 [class*="bt-"]{border:0;border-radius:$bt-radius-defalut;cursor:pointer;}
 
-.bt-primary{
-  color:$bt-primary-text-color;
-  background-color:$bt-primary-bg-color;
-  border:$bt-primary-border-color;
-}
 .bt-size-xlg{ 
   padding:0 20px; 
   height:$bt-size-xlg;
@@ -35,9 +30,45 @@
   font-weight:500;
 }
 .bt-size-xsm{ 
-  padding:0 12px; 
+  padding:0 6px; 
   height:$bt-size-xsm;
   line-height:$bt-size-xsm;
-  font-size:15px;
+  font-size:13px;
   font-weight:500;
+}
+
+.bt-primary{
+  color:$bt-primary-text-color;
+  background-color:$bt-primary-bg-color;
+  border:1px solid $bt-primary-border-color;
+}
+.bt-outline{
+  color:$bt-outline-text-color;
+  background-color:$bt-outline-bg-color;
+  border:1px solid $bt-outline-border-color;
+}
+.bt-fill{
+  color:$bt-fill-text-color;
+  background-color:$bt-fill-bg-color;
+  border:1px solid $bt-fill-border-color;
+}
+.bt-outlineTonal{
+  color:$bt-outlineTonal-text-color;
+  background-color:$bt-outlineTonal-bg-color;
+  border:1px solid $bt-outlineTonal-border-color;
+}
+.bt-fillOutlineTonal{
+  color:$bt-fillOutlineTonal-text-color;
+  background-color:$bt-fillOutlineTonal-bg-color;
+  border:1px solid $bt-fillOutlineTonal-border-color;
+}
+.bt-fillTonal{
+  color:$bt-fillTonal-text-color;
+  background-color:$bt-fillTonal-bg-color;
+  border:1px solid $bt-fillTonal-border-color;
+}
+.bt-ghost{
+  color:$bt-ghost-text-color;
+  background-color:$bt-ghost-bg-color;
+  border:1px solid $bt-ghost-border-color;
 }
