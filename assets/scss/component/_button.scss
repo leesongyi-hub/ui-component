@@ -1,79 +1,192 @@
+@use "sass:color";
 
-[class*="bt-"]{
+$btn-primary-bg-color: var(--base-color-primary-500);
+$btn-primary-hover-bg-color: color.scale($base-color-primary-500, $lightness: -10%);
+
+$btn-outline-bg-color: var(--base-color-white);
+$btn-outline-hover-bg-color: color.scale($base-color-white, $lightness: -5%);
+
+$btn-fill-bg-color: var(--base-color-gray-30);
+$btn-fill-hover-bg-color: color.scale($base-color-gray-30, $lightness: -5%);
+
+:root{
+  --btn-radius-defalut:4px;
+
+  --btn-size-lg: 40px;
+  --btn-size-md: 36px;
+
+  --btn-primary-border-color: var(--base-color-primary-500);
+  --btn-primary-text-color: var(--base-color-white);
+  --btn-primary-bg-color: #{$btn-primary-bg-color};
+  --btn-primary-hover-bg-color: #{$btn-primary-hover-bg-color};
+
+  --btn-outline-border-color: var(--border-color-defalut);
+  --btn-outline-text-color: var(--text-color-300);
+  --btn-outline-bg-color: #{$btn-outline-bg-color};
+  --btn-outline-hover-bg-color: #{$btn-outline-hover-bg-color};
+
+  --btn-fill-border-color: var(--base-color-gray-30);
+  --btn-fill-text-color: var(--text-color-300);
+  --btn-fill-bg-color: #{$btn-fill-bg-color};
+  --btn-fill-hover-bg-color: #{$btn-fill-hover-bg-color};
+}
+
+[class*="btn-"]{
   display:inline-flex;
   border:0;
-  border-radius:$bt-radius-defalut;
+  border-radius:var(--btn-radius-defalut);
   cursor:pointer;
 }
 
-.bt-size-xlg{ 
-  padding:0 20px; 
-  height:$bt-size-xlg;
-  line-height:$bt-size-xlg;
-  font-size:15px; 
-  font-weight:500;
-}
-.bt-size-lg{ 
+//size
+.btn-size-lg{ 
   padding:0 16px; 
-  height:$bt-size-lg;
-  line-height:$bt-size-lg;
-  font-size:15px;
-  font-weight:500;
+  height:var(--btn-size-lg);
+  line-height:var(--btn-size-lg);
+  font-size:var(--font-size-body-lg);
+  font-weight: var(--font-weight-medium);
 }
-.bt-size-md{ 
-  padding:0 16px; 
-  height:$bt-size-md;
-  line-height:$bt-size-md;
-  font-size:14px;
-  font-weight:500;
-}
-.bt-size-sm{ 
+.btn-size-md{ 
   padding:0 12px; 
-  height:$bt-size-sm;
-  line-height:$bt-size-sm;
-  font-size:14px;
-  font-weight:500;
-}
-.bt-size-xsm{ 
-  padding:0 6px; 
-  height:$bt-size-xsm;
-  line-height:$bt-size-xsm;
-  font-size:13px;
-  font-weight:500;
+  height:var(--btn-size-md);
+  line-height:var(--btn-size-md);
+  font-size:var(--font-size-body-md);
 }
 
-.bt-primary{
-  color:$bt-primary-text-color;
-  background-color:$bt-primary-bg-color;
-  border:1px solid $bt-primary-border-color;
+//type
+.btn-primary{
+  color:var(--btn-primary-text-color);
+  background-color:var(--btn-primary-bg-color);
+  border:1px solid var(--btn-primary-border-color);
+
+  &:hover{
+    background-color: var(--btn-primary-hover-bg-color);
+  }
 }
-.bt-outline{
-  color:$bt-outline-text-color;
-  background-color:$bt-outline-bg-color;
-  border:1px solid $bt-outline-border-color;
+
+.btn-outline{
+  color: var(--btn-outline-text-color);
+  background-color: var(--btn-outline-bg-color);
+  border:1px solid  var(--btn-outline-border-color);
+
+  &:hover{
+    background-color: var(--btn-outline-hover-bg-color);
+  }
 }
-.bt-fill{
-  color:$bt-fill-text-color;
-  background-color:$bt-fill-bg-color;
-  border:1px solid $bt-fill-border-color;
+
+.btn-fill{
+  color: var(--btn-fill-text-color);
+  background-color: var(--btn-fill-bg-color);
+  border:1px solid  var(--btn-fill-border-color);
+
+  &:hover{
+    background-color: var(--btn-fill-hover-bg-color);
+  }
 }
-.bt-outlineTonal{
-  color:$bt-outlineTonal-text-color;
-  background-color:$bt-outlineTonal-bg-color;
-  border:1px solid $bt-outlineTonal-border-color;
-}
-.bt-fillOutlineTonal{
-  color:$bt-fillOutlineTonal-text-color;
-  background-color:$bt-fillOutlineTonal-bg-color;
-  border:1px solid $bt-fillOutlineTonal-border-color;
-}
-.bt-fillTonal{
-  color:$bt-fillTonal-text-color;
-  background-color:$bt-fillTonal-bg-color;
-  border:1px solid $bt-fillTonal-border-color;
-}
-.bt-ghost{
-  color:$bt-ghost-text-color;
-  background-color:$bt-ghost-bg-color;
-  border:1px solid $bt-ghost-border-color;
-}
+
+// [class*="btn-"]{
+//   display:inline-flex;
+//   border:0;
+//   border-radius:$bt-radius-defalut;
+//   cursor:pointer;
+// }
+
+// //size
+// .btn-size-xlg{ 
+//   padding:0 20px; 
+//   height:$bt-size-xlg;
+//   line-height:$bt-size-xlg;
+//   font-size:15px; 
+//   font-weight:500;
+// }
+// .btn-size-lg{ 
+//   padding:0 16px; 
+//   height:$bt-size-lg;
+//   line-height:$bt-size-lg;
+//   font-size:15px;
+//   font-weight:500;
+// }
+// .btn-size-md{ 
+//   padding:0 16px; 
+//   height:$bt-size-md;
+//   line-height:$bt-size-md;
+//   font-size:14px;
+//   font-weight:500;
+// }
+// .btn-size-sm{ 
+//   padding:0 12px; 
+//   height:$bt-size-sm;
+//   line-height:$bt-size-sm;
+//   font-size:14px;
+//   font-weight:500;
+// }
+// .btn-size-xsm{ 
+//   padding:0 6px; 
+//   height:$bt-size-xsm;
+//   line-height:$bt-size-xsm;
+//   font-size:13px;
+//   font-weight:500;
+// }
+
+// //type
+// .btn-primary{
+//   color:$bt-primary-text-color;
+//   background-color:$bt-primary-bg-color;
+//   border:1px solid $bt-primary-border-color;
+// }
+// .btn-outline{
+//   color:$bt-outline-text-color;
+//   background-color:$bt-outline-bg-color;
+//   border:1px solid $bt-outline-border-color;
+// }
+// .btn-fill{
+//   color:$bt-fill-text-color;
+//   background-color:$bt-fill-bg-color;
+//   border:1px solid $bt-fill-border-color;
+// }
+// .btn-outlineTonal{
+//   color:$bt-outlineTonal-text-color;
+//   background-color:$bt-outlineTonal-bg-color;
+//   border:1px solid $bt-outlineTonal-border-color;
+// }
+// .btn-fillOutlineTonal{
+//   color:$bt-fillOutlineTonal-text-color;
+//   background-color:$bt-fillOutlineTonal-bg-color;
+//   border:1px solid $bt-fillOutlineTonal-border-color;
+// }
+// .btn-fillTonal{
+//   color:$bt-fillTonal-text-color;
+//   background-color:$bt-fillTonal-bg-color;
+//   border:1px solid $bt-fillTonal-border-color;
+// }
+// .btn-ghost{
+//   color:$bt-ghost-text-color;
+//   background-color:$bt-ghost-bg-color;
+//   border:1px solid $bt-ghost-border-color;
+// }
+
+// //hover
+// .btn-primary:hover{
+//   background: color.scale($bt-primary-bg-color, $lightness: -10%);
+// }
+
+// .btn-fill:hover{
+//   background: color.scale($bt-fill-bg-color, $lightness: -5%);
+// }
+// .btn-fillTonal:hover{
+//   background: color.scale($bt-fillTonal-bg-color, $lightness: -5%);
+// }
+// .btn-fillOutlineTonal:hover{
+//   background: color.scale($bt-fillOutlineTonal-bg-color, $lightness: -5%);
+// }
+// .btn-outline:hover{
+//   background: color.scale($bt-outline-bg-color, $lightness: -5%);
+// }
+// .btn-outlineTonal:hover{
+//   background: color.scale($bt-outlineTonal-bg-color, $lightness: -5%);
+// }
+
+// .btn-ghost:hover{
+//   background-color:$base-color-gray-20;
+
+// }

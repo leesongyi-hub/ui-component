@@ -1,0 +1,167 @@
+/*
+  [Variables]
+*/
+$font-size-root:  16px;
+
+$font-size-display-lg: round($font-size-root * 2.5);
+$font-size-display-md: round($font-size-root * 2.2);
+$font-size-display-sm: round($font-size-root * 2);
+
+$font-size-heading-lg: round($font-size-root * 1.6);
+$font-size-heading-md: round($font-size-root * 1.4);
+$font-size-heading-sm: round($font-size-root * 1.2);
+
+$font-size-body-lg: $font-size-root + 1;
+$font-size-body-md: $font-size-root;
+$font-size-body-sm: $font-size-root - 1;
+
+$font-size-caption-lg: $font-size-root - 2;
+$font-size-caption-md: $font-size-root - 3;
+$font-size-caption-sm: $font-size-root - 4;
+
+$line-height-display-lg: round($font-size-display-lg * 1.3);
+$line-height-display-defalut: round($font-size-display-md * 1.3);
+$line-height-display-sm: round($font-size-display-sm * 1.3);
+
+$line-height-heading-lg: round($font-size-heading-lg * 1.3);
+$line-height-heading-defalut: round($font-size-heading-md * 1.3);
+$line-height-heading-sm: round($font-size-heading-sm * 1.3);
+
+$line-height-body-lg: round($font-size-body-lg * 1.6);
+$line-height-body-defalut: round($font-size-body-md * 1.6);
+$line-height-body-sm: round($font-size-body-sm * 1.6);
+
+$line-height-caption-lg: round($font-size-caption-lg * 1.5);
+$line-height-caption-defalut: round($font-size-caption-md * 1.5);
+$line-height-caption-sm: round($font-size-caption-sm * 1.5);
+
+:root{
+  --font-size-root: #{$font-size-root};
+
+  --font-size-display-lg: #{$font-size-display-lg};
+  --font-size-display-md: #{$font-size-display-md};
+  --font-size-display-sm: #{$font-size-display-sm};
+
+  --font-size-heading-lg: #{$font-size-heading-lg};
+  --font-size-heading-md: #{$font-size-heading-md};
+  --font-size-heading-sm: #{$font-size-heading-sm};
+
+  --font-size-body-lg: #{$font-size-body-lg};
+  --font-size-body-md: #{$font-size-body-md};
+  --font-size-body-sm: #{$font-size-body-sm};
+
+  --font-size-caption-lg: #{$font-size-caption-lg};
+  --font-size-caption-md: #{$font-size-caption-md};
+  --font-size-caption-sm: #{$font-size-caption-sm};
+
+  --line-height-display-lg: #{$line-height-display-lg};
+  --line-height-display-defalut: #{$line-height-display-defalut};
+  --line-height-display-sm: #{$line-height-display-sm};
+
+  --line-height-heading-lg: #{$line-height-heading-lg};
+  --line-height-heading-defalut: #{$line-height-heading-defalut};
+  --line-height-heading-sm: #{$line-height-heading-sm};
+
+  --line-height-body-lg: #{$line-height-body-lg};
+  --line-height-body-defalut: #{$line-height-body-defalut};
+  --line-height-body-sm: #{$line-height-body-sm};
+
+  --line-height-caption-lg: #{$line-height-caption-lg};
+  --line-height-caption-defalut: #{$line-height-caption-defalut};
+  --line-height-caption-sm: #{$line-height-caption-sm};
+
+  --font-weight-black: 900;
+  --font-weight-extrabold: 800;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+}
+
+/*
+  [Mixin]
+*/
+@mixin typo($color, $size, $weight, $line-height){
+  color: $color;
+  font-size:  $size;
+  font-weight:  $weight;
+  line-height: $line-height;
+}
+
+/* 
+  [Utility class]
+*/
+.fs-display-lg{font-size:var(--font-size-display-lg);}
+.fs-display-md{font-size:var(--font-size-display-md);}
+.fs-display-sm{font-size:var(--font-size-display-sm);}
+.fs-heading-lg{font-size:var(--font-size-heading-lg);}
+.fs-heading-md{font-size:var(--font-size-heading-md);}
+.fs-heading-sm{font-size:var(--font-size-heading-sm);}
+.fs-body-lg{font-size:var(--font-size-body-lg);}
+.fs-body-md{font-size:var(--font-size-body-md);}
+.fs-body-sm{font-size:var(--font-size-body-sm);}
+.fs-caption-lg{font-size:var(--font-size-caption-lg);}
+.fs-caption-md{font-size:var(--font-size-caption-md);}
+.fs-caption-sm{font-size:var(--font-size-caption-sm);}
+
+.fw-black{font-weight:var(--font-weight-black);}
+.fw-extrabold{font-weight:var(--font-weight-extrabold);}
+.fw-bold{font-weight:var(--font-weight-bold);}
+.fw-semibold{font-weight:var(--font-weight-semibold);}
+.fw-medium{font-weight:var(--font-weight-medium);}
+.fw-regular{font-weight:var(--font-weight-regular);}
+.fw-light{font-weight:var(--font-weight-light);}
+
+.txt-color-100{color:var(--text-color-100);}
+.txt-color-200{color:var(--text-color-200);}
+.txt-color-300{color:var(--text-color-300);}
+.txt-color-400{color:var(--text-color-400);}
+.txt-color-500{color:var(--text-color-500);}
+.txt-color-600{color:var(--text-color-600);}
+.txt-color-700{color:var(--text-color-700);}
+.txt-color-800{color:var(--text-color-800);}
+.txt-color-900{color:var(--text-color-900);}
+
+/* 
+  [Template class]
+*/
+.typo-display-lg{
+  @include typo(var(--text-color-100), var(--font-size-display-lg), var(--font-weight-bold), var(--line-height-display-lg) );
+}
+.typo-display-md{
+  @include typo(var(--text-color-100), var(--font-size-display-md), var(--font-weight-bold), var(--line-height-display-md) );
+}
+.typo-display-sm{
+  @include typo(var(--text-color-100), var(--font-size-display-sm), var(--font-weight-bold), var(--line-height-display-sm) );
+}
+
+.typo-heading-lg{
+  @include typo(var(--text-color-100), var(--font-size-heading-lg), var(--font-weight-bold), var(--line-height-heading-lg) );
+}
+.typo-heading-md{
+  @include typo(var(--text-color-100), var(--font-size-heading-md), var(--font-weight-bold), var(--line-height-heading-md) );
+}
+.typo-heading-sm{
+  @include typo(var(--text-color-100), var(--font-size-heading-sm), var(--font-weight-semibold), var(--line-height-heading-sm) );
+}
+
+.typo-body-lg{
+  @include typo(var(--text-color-300), var(--font-size-body-lg), var(--font-weight-regular), var(--line-height-body-lg) );
+}
+.typo-body-md{
+  @include typo(var(--text-color-300), var(--font-size-body-md), var(--font-weight-regular), var(--line-height-body-md) );
+}
+.typo-body-sm{
+  @include typo(var(--text-color-300), var(--font-size-body-sm), var(--font-weight-regular), var(--line-height-body-sm) );
+}
+
+.typo-caption-lg{
+  @include typo(var(--text-color-800), var(--font-size-caption-lg), var(--font-weight-regular), var(--line-height-caption-lg) );
+}
+.typo-caption-md{
+  @include typo(var(--text-color-800), var(--font-size-caption-md), var(--font-weight-regular), var(--line-height-caption-md) );
+}
+.typo-caption-sm{
+  @include typo(var(--text-color-800), var(--font-size-caption-sm), var(--font-weight-regular), var(--line-height-caption-sm) );
+}
